@@ -1,3 +1,3 @@
-This is a new experiment
-
-This is an addition for me.
+Write a function that finds the number of factors in a number.
+Example, the number 10 if passed to the function will give an answer of 4.
+Beacause 10 has 4 factors which are 1,2,5, and 10.
