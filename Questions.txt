@@ -1,3 +1,6 @@
 Write a function that finds the number of factors in a number.
 Example, the number 10 if passed to the function will give an answer of 4.
 Beacause 10 has 4 factors which are 1,2,5, and 10.
+
+fruits = ['apple', 'orange', 'banana', 'pear', 'raspberry', 'peach', 'plum']
+Requirement is to search through
