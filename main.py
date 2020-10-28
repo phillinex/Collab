@@ -18,7 +18,7 @@ def AcceptOnlyNumber():
     return n
 
 def factor(a):
-    if a!=1:
+    if a!=1: #Beautiful, problem is solved
         x=2 #Skipping the numbers 1 and the number itself 'a'
         for i in range(2, math.ceil(a/2)+1):
           if a%i==0:
