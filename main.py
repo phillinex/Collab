@@ -18,11 +18,14 @@ def AcceptOnlyNumber():
     return n
 
 def factor(a):
-    x=2 #Skipping the numbers 1 and the number itself 'a'
-    for i in range(2, math.ceil(a/2)+1):
-        if a%i==0:
+    if a!=1:
+        x=2 #Skipping the numbers 1 and the number itself 'a'
+        for i in range(2, math.ceil(a/2)+1):
+          if a%i==0:
             x+=1
-    return x
+        return x
+    else:
+        return 1
 
 #let the function that accepts only valid numbers handle the user entry    
 num = AcceptOnlyNumber()
