@@ -9,7 +9,8 @@ def primenumber(a):
     return x
 
 
-def primefactors(x):
+def primefactors():
+    x=checkinput(input("Enter an integer:"))
     for i in range(2,(x//2)+1):
         if x%i==0:
             if primenumber(i):
@@ -17,10 +18,14 @@ def primefactors(x):
     if primenumber(x):
         print(x)
 
-while True:
-    try:
-        a=int(input("Please enter an integer:"))
-        break
-    except ValueError:
-        print("Not a valid integer! Please try again")
-primefactors(a)
+def checkinput(x):
+    while True:
+        try:
+            x = int(x)
+            break
+        except ValueError:
+            print("Not a valid integer!")
+            x=input("Please enter a valid integer:")
+    return x
+
+primefactors()
